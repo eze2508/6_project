@@ -1,3 +1,5 @@
+# Generated Cmake Pico project file
+
 cmake_minimum_required(VERSION 3.13)
 
 set(CMAKE_C_STANDARD 11)
@@ -47,7 +49,7 @@ target_link_libraries(velocidad pico_stdlib hardware_gpio hardware_pwm hardware_
 
 # Add the standard include files to the build
 target_include_directories(velocidad PRIVATE
-    ${CMAKE_CURRENT_LIST_DIR}
+  ${CMAKE_CURRENT_LIST_DIR}
 )
 
 # Add any user requested libraries
@@ -56,3 +58,4 @@ target_link_libraries(velocidad
         )
 
 pico_add_extra_outputs(velocidad)
+
